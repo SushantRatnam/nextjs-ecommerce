@@ -79,7 +79,7 @@ function Products({ giftcards }) {
 	return (
 		<ul>
 			{giftcards.map((card) => {
-				return <Card key={card.id} src={card.images[0].src} />;
+				return <Card key={card.id} image={card.images[0]} title={card.title} brandName={card.brandName} minAmount={card.offers[0].priceOptions.minAmount} maxAmount={card.offers[0].priceOptions.maxAmount} />;
 			})}
 		</ul>
 	);
