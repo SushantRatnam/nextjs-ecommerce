@@ -77,7 +77,7 @@ import Card from '../components/Card';
 
 function Products({ giftcards }) {
 	return (
-		<ul>
+		<ul className='flex-wrap mt-8 md:flex'>
 			{giftcards.map((card) => {
 				return <Card key={card.id} image={card.images[0]} title={card.title} brandName={card.brandName} minAmount={card.offers[0].priceOptions.minAmount} maxAmount={card.offers[0].priceOptions.maxAmount} />;
 			})}
