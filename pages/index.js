@@ -18,8 +18,9 @@ export default function Home({giftcards}) {
 }
 
 export const getStaticProps = async () => {
-	const res = await fetch('http://localhost:3001/content')
-	const giftcards = await res.json()
+	const res = await fetch('https://api.npoint.io/e4903a20e48ec12832c7')
+	const json = await res.json()
+	const giftcards = json.content
 	return {
 		props: {
 			giftcards
