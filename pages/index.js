@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import FeaturedLinks from '../components/featuredLinks';
 import Products from '../components/Products';
 
 export default function Home({ giftcards }) {
@@ -10,6 +11,7 @@ export default function Home({ giftcards }) {
 			</Head>
 
 			<main>
+				<FeaturedLinks/>
 				<section id='cardList' className='container mx-auto'>
 					<Products giftcards={giftcards} />
 				</section>

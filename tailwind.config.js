@@ -13,6 +13,9 @@ module.exports = {
 				black: {
 					cardPrice: '#707070',
 				},
+				blue: {
+					customBtn: '#2b67ae',
+				},
 			},
 		},
 		boxShadow: {
@@ -24,6 +27,7 @@ module.exports = {
 			'2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
 			card: '3px 3px 5px 0 rgb(0 0 0 / 22%)',
 			cardHover: '6px 6px 8px 0 rgb(0 0 0 / 22%)',
+			customBtn: '0 0 7px 2px #e0e0d9;',
 			inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
 			none: 'none',
 		},
