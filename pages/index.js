@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import FeaturedLinks from '../components/featuredLinks';
+import FeaturedLinks from '../components/FeaturedLinks';
 import Products from '../components/Products';
 
 export default function Home({ giftcards }) {
