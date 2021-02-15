@@ -7,6 +7,8 @@ export default function Home({ giftcards }) {
 	return (
 		<div>
 			<Head>
+				<html lang="en">
+				<meta charset="utf-8"/>
 				<title>Mini Mall</title>
 				<link rel='icon' href='/favicon.ico' />
 				<meta name='description' content=' A Gift Card for every occasion. Over 200 gift cards from your favorite retailers. Find great deals and promotions for all of your gift card needs.'></meta>
