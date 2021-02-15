@@ -7,7 +7,6 @@ export default function Home({ giftcards }) {
 	return (
 		<div>
 			<Head>
-				<html lang="en">
 				<meta charset="utf-8"/>
 				<title>Mini Mall</title>
 				<link rel='icon' href='/favicon.ico' />
