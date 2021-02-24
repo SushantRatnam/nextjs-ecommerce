@@ -1,21 +1,20 @@
 import Head from 'next/head';
-import Banner from '../components/banner';
-import FeaturedCards from '../components/FeaturedCards';
-import FeaturedLinks from '../components/FeaturedLinks';
-import Products from '../components/Products';
+import FeaturedCards from '../../components/FeaturedCards';
+import FeaturedLinks from '../../components/FeaturedLinks';
+import Products from '../../components/Products';
 
 export default function Home({ giftcards }) {
 	return (
 		<div>
 			<Head>
 				<meta charset="utf-8"/>
-				<title>Mini Mall</title>
+				<title>Mini Mall - Customer1</title>
 				<link rel='icon' href='/favicon.ico' />
 				<meta name='description' content=' A Gift Card for every occasion. Over 200 gift cards from your favorite retailers. Find great deals and promotions for all of your gift card needs.'></meta>
 			</Head>
 
 			<main>
-				<Banner/>
+                <h1>Customer1</h1>
 				<FeaturedLinks />
 				<FeaturedCards />
 				<section id='cardList' className='container mx-auto'>

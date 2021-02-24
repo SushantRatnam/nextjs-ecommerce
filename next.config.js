@@ -1,5 +1,5 @@
 module.exports = {
-    images: {
-      domains: ['productimages.nimbledeals.com'],
-    },
-  }
+	images: {
+		domains: ['productimages.nimbledeals.com', 'placehold.it'],
+	},
+};

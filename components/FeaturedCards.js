@@ -13,7 +13,7 @@ function FeaturedCards() {
 					<button className='bg-blue-customBtn text-white text-xl p-2.5 w-auto'>Send an eGift Card</button>
 				</Link>
 			</article>
-			<div className='flex-1 '>hi</div>
+			<div className='flex-1 '>Featured Cards Space</div>
 		</section>
 	);
 }
