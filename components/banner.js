@@ -25,7 +25,7 @@ function BannerData() {
 		return res.data;
 	});
 	if (status !== 'success') {
-		return <Image src='http://placehold.it/1440x405' className='mx-auto' layout='responsive' width='1440' height='405'></Image>
+		return <Image src='http://placehold.it/1440x405' alt="placeholder" className='mx-auto' layout='responsive' width='1440' height='405'></Image>
 	}
 
 	return (
@@ -33,7 +33,7 @@ function BannerData() {
 			{data.banner.map((item, idx) => {
 				return (
 					<div key={item.src}>
-						<Image className='mx-auto' src={item.src} layout='responsive' width='1440' height='405'></Image>
+						<Image className='mx-auto' alt={item.alt} src={item.src} layout='responsive' width='1440' height='405'></Image>
 					</div>
 				);
 			})}
