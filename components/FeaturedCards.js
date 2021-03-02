@@ -1,14 +1,21 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router'
+import en from "../locales/en";
+import fr from "../locales/fr";
+
 
 function FeaturedCards() {
+	const router = useRouter();
+	const { locale } = router;
+	const translatedMessage = locale === 'en' ? en : fr;
 	return (
 		<section className='container flex flex-wrap justify-between pt-16 mx-auto'>
-			<article className='flex-1 mr-5'>
-				<h1 className='mb-3 text-5xl'>Gift Cards</h1>
+			<article className='flex-1 pr-8 mr-16 leading-7'>
+				<h1 className='mb-3 text-5xl'>{translatedMessage.heading}</h1>
 				<p className='mb-5'>
-					<strong>Show someone you care by sending an eGift today. Easy delivery, within minutes.</strong>
+					<strong>{translatedMessage.subHeading}</strong>
 				</p>
-				<p className='mb-5'>While you may not be able to visit with your loved ones or thank those supporting your local community in person, we have a simple solution. eGifts are a great way to give thanks, give a gift, or to simply show someone you’re thinking of them. With hundreds of brands to choose from, there is an eGift Card for everyone!</p>
+				<p className='mb-5'>{translatedMessage.description}</p>
 				<Link href='#'>
 					<button className='bg-blue-customBtn text-white text-xl p-2.5 w-auto'>Send an eGift Card</button>
 				</Link>

@@ -38,6 +38,12 @@ module.exports = {
 			none: 'none',
 			'4-col': '1 1 22%',
 		},
+		maxWidth: {
+			header: '9rem',
+		},
+		fontFamily: {
+			html: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+		},
 	},
 	variants: {
 		extend: {},

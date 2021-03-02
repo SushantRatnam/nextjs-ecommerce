@@ -22,10 +22,12 @@ function BannerData() {
 	const queryClient = useQueryClient();
 	const { status, data } = useQuery('banner', async () => {
 		const res = await axios.get('https://api.npoint.io/5603b3fdf4e75017bf60');
+		// const res = await axios.get('https://testingcallback.free.beeceptor.com/banner');
+
 		return res.data;
 	});
 	if (status !== 'success') {
-		return <Image src='http://placehold.it/1440x405' alt="placeholder" className='mx-auto' layout='responsive' width='1440' height='405'></Image>
+		return <Image src='http://placehold.it/1440x405' alt='placeholder' className='mx-auto' layout='responsive' width='1440' height='405'></Image>;
 	}
 
 	return (

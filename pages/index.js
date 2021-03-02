@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Banner from '../components/banner';
 import FeaturedCards from '../components/FeaturedCards';
 import FeaturedLinks from '../components/FeaturedLinks';
+import Header from '../components/header';
 import Products from '../components/Products';
 
 export default function Home({ giftcards }) {
@@ -15,6 +16,7 @@ export default function Home({ giftcards }) {
 			</Head>
 
 			<main>
+				<Header/>
 				<Banner/>
 				<FeaturedLinks />
 				<FeaturedCards />
