@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Banner from '../components/banner';
 import FeaturedCards from '../components/FeaturedCards';
 import FeaturedLinks from '../components/FeaturedLinks';
-import Header from '../components/header';
+import Header from '../components/Header';
 import Products from '../components/Products';
 
 export default function Home({ giftcards }) {
