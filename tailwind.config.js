@@ -39,7 +39,7 @@ module.exports = {
 			'4-col': '1 1 22%',
 		},
 		maxWidth: {
-			header: '9rem',
+			header: '6rem',
 		},
 		fontFamily: {
 			html: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
